@@ -55,7 +55,7 @@ After uploading it ignore the compatibility warning.
 
 Feel free to submit translation to github in Pull Requests. Also, if you want them to be included on the MyBB mods site, ask me to provide you the contributor status for my project.
 
-**Donations**
+**Donations**:
 -------------
 
 Donations will motivate me to work on further MyBB plugins. Feel free to use the button in the ACP Plugins section anytime.  
