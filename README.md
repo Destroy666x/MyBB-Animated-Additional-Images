@@ -1,7 +1,7 @@
 **Animated Additional Images**
 ===============
 
-**Name**: Animated Additional Images 
+**Name**: Animated Additional Images  
 **Author**: Destroy666  
 **Version**: 1.0  
 
