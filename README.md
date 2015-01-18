@@ -39,8 +39,8 @@ After uploading it ignore the compatibility warning.
 
 1. Get Plugin Library (check Requirements section for more info).
 2. Upload everything from upload folder to your forum root (where index.php, forumdisplay.php etc. are located).
-2. Install and activate plugin in ACP -> Configuration -> Plugins.
-3. Configure it.
+3. Install and activate plugin in ACP -> Configuration -> Plugins.
+4. Configure it.
 
 **Templates troubleshooting**:
 ------------------------------
