@@ -348,11 +348,6 @@ Get additional group images HTML (any other than displaygroup).
 */
 function get_animated_additional_images($usergroup, $displaygroup, $additionalgroups)
 {
-	static $usergroups_cache = '';
-	
-	if(!$usergroups_cache)
-		$usergroups_cache = $GLOBALS['cache']->read('usergroups');
-	
 	$groups = explode(',', $additionalgroups);
 	$groups[] = $usergroup;
 	
@@ -367,6 +362,11 @@ function get_animated_additional_images($usergroup, $displaygroup, $additionalgr
 		return '';
 	
 	global $templates, $mybb;
+	
+	static $usergroups_cache = '';
+	
+	if(!$usergroups_cache)
+		$usergroups_cache = $GLOBALS['cache']->read('usergroups');
 	
 	if(!empty($mybb->user['language']))
 		$lang = $mybb->user['language'];
