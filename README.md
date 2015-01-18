@@ -1,6 +1,8 @@
 **Animated Additional Images**
 ===============
 
+[![Animated Additional Images](https://raw.github.com/Destroy666x/MyBB-Animated-Additional-Images/feature/images/preview1.png "Preview")]  
+
 **Name**: Animated Additional Images  
 **Author**: Destroy666  
 **Version**: 1.0  
