@@ -258,7 +258,7 @@ $plugins->add_hook('global_start', 'animated_additional_images_global');
 function animated_additional_images_global()
 {
 	global $mybb, $additional_images_js;
-	$additional_images_js = $GLOBALS['additional_images_html']= $GLOBALS['post']['additional_images_html'] = '';
+	$additional_images_js = $GLOBALS['additional_images_html'] = '';
 	
 	$switchtime = (int)$mybb->settings['animated_additional_images_time'];
 	
