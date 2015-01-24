@@ -47,9 +47,9 @@ After uploading it ignore the compatibility warning.
 ------------------------------
 
 * Globally - add **{$additional_images_js}** to the headerinclude template.
-* Showthread/PM/announcements/previews - add **{$post['additional_images_html']}** to postbit templates (postbit and postbit_classic by default)
-* Profile - add **{$additional_images_html}** to the printthread template
-* Memberlist - add **{$additional_images_html}** to any newreply template (newreply by default)
+* Showthread/PM/announcements/previews - add **{$post['additional_images_html']}** to postbit template(s) (postbit and postbit_classic by default)
+* Profile - add **{$additional_images_html}** to any profile template (member_profile by default)
+* Memberlist - add **{$additional_images_html}** to the memberlist_user template
 
 **Translations**:
 -----------------
