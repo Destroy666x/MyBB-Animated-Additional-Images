@@ -218,7 +218,7 @@ function animate_additional_images() {
 }
 
 $(document).ready(function() {
-    setInterval(animate_additional_images, {$switchtime});
+	setInterval(animate_additional_images, {$switchtime});
 });
 </script>'
 	));
