@@ -3,7 +3,7 @@
 /*
 Name: Animated Additional Group Images
 Author: Destroy666
-Version: 1.1
+Version: 1.2
 Requirements: Plugin Library
 Info: Plugin for MyBB forum software, coded for versions 1.8.x (may also work in 1.6.x/1.4.x after some changes).
 It displays additional group images in postbit/memberlist/profile by using a "carousel" JS.
@@ -59,7 +59,7 @@ function animated_additional_images_info()
 		'website'		=> 'https://github.com/Destroy666x',
 		'author'		=> 'Destroy666',
 		'authorsite'	=> 'https://github.com/Destroy666x',
-		'version'		=> 1.1,
+		'version'		=> 1.2,
 		'codename'		=> 'animated_additional_images',
 		'compatibility'	=> '18*'
     );
@@ -375,6 +375,7 @@ function get_animated_additional_images($usergroup, $displaygroup, $additionalgr
 	
 	$first = 'additional_img_active additional_img_first';
 	$display = 'inline-block';
+	$images = '';
 	
 	foreach($groups as $group)
 	{

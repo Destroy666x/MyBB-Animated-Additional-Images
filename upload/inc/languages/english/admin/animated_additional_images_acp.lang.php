@@ -3,7 +3,7 @@
 /*
 Name: Animated Additional Group Images
 Author: Destroy666
-Version: 1.1
+Version: 1.2
 Requirements: Plugin Library
 Info: Plugin for MyBB forum software, coded for versions 1.8.x (may also work in 1.6.x/1.4.x after some changes).
 It displays additional group images in postbit/memberlist/profile by using a "carousel" JS.

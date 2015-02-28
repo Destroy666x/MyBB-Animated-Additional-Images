@@ -5,7 +5,7 @@
 
 **Name**: Animated Additional Images  
 **Author**: Destroy666  
-**Version**: 1.1  
+**Version**: 1.2  
 
 **Info**:
 ---------
@@ -24,6 +24,7 @@ Released under GNU GPL v3, 29 June 2007. Read the LICENSE.md file for more infor
 **Changelog**:
 --------------
 
+**1.2** - small corrections  
 **1.1** - fixed a small conflict with MyBB core code that cause quick reply to break (thanks to Ben Conway for report)  
 **1.0** - initial release  
 
