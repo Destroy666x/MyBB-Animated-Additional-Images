@@ -157,6 +157,14 @@ function animated_additional_images_activate()
 			'value'			=> 5000
 		);
 		
+		$animated_additional_images_settings[] = array(
+			'name'			=> 'animated_additional_images_pause',
+			'title'			=> $db->escape_string($lang->animated_additional_images_pause),
+			'description'	=> $db->escape_string($lang->animated_additional_images_pause_desc),
+			'optionscode'	=> 'yesno',
+			'value'			=> 1
+		);		
+		
 		foreach($animated_additional_images_settings as &$current_setting)
 		{
 			$current_setting['sid'] = NULL;
@@ -207,6 +215,7 @@ function animate_additional_images() {
 		if(th.find(".additional_img").length > 1)
 		{
 			var current = th.find(".additional_img_active");
+			{$pause}
 			var img = current.next(".additional_img");
 			var next = img.length ? img : th.find(".additional_img_first");
 			
@@ -285,12 +294,12 @@ function animated_additional_images_global()
 			$plugins->add_hook('member_profile_end', 'animated_additional_images_profile');
 			$yes = true;
 		}
-		elseif((THIS_SCRIPT == 'announcements.php' || THIS_SCRIPT == 'modcp.php' && in_array($action, array('new_announcement', 'edit_announcement'))) && $mybb->settings['animated_additional_images_announcements'])
+		elseif(THIS_SCRIPT == 'announcements.php' || (THIS_SCRIPT == 'modcp.php' && in_array($action, array('new_announcement', 'edit_announcement'))) && $mybb->settings['animated_additional_images_announcements'])
 		{
 			$plugins->add_hook('postbit_announcement', 'animated_additional_images_postbit2');
 			$yes = true;
 		}
-		elseif((THIS_SCRIPT == 'newreply.php' || THIS_SCRIPT == 'editpost.php' || THIS_SCRIPT == 'newthread.php') && $mybb->settings['animated_additional_images_previews'])
+		elseif(in_array(THIS_SCRIPT, array('newreply.php', 'editpost.php', 'newthread.php')) && $mybb->settings['animated_additional_images_previews'])
 		{
 			$plugins->add_hook('postbit_prev', 'animated_additional_images_postbit2');
 			$yes = true;
@@ -304,8 +313,12 @@ function animated_additional_images_global()
 		if($yes)
 		{
 			$GLOBALS['templatelist'] .= !empty($GLOBALS['templatelist'])
-											? ',animatedadditionalimages_js,animatedadditionalimages_all,animatedadditionalimages_image'
-											: 'animatedadditionalimages_js,animatedadditionalimages_all,animatedadditionalimages_image';
+										? ',animatedadditionalimages_js,animatedadditionalimages_all,animatedadditionalimages_image'
+										: 'animatedadditionalimages_js,animatedadditionalimages_all,animatedadditionalimages_image';
+			
+			if($mybb->settings['animated_additional_images_pause'])
+				$pause = 'if(current.is(":hover")) return;';
+			
 			eval('$additional_images_js = "'.$GLOBALS['templates']->get('animatedadditionalimages_js').'";');
 		}
 	}

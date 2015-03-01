@@ -34,3 +34,5 @@ $l['animated_additional_images_previews'] = 'Turn Animated Additional Images On 
 $l['animated_additional_images_previews_desc'] = 'Set to On to enable the plugin in post previews.';
 $l['animated_additional_images_time'] = 'Image Change Time';
 $l['animated_additional_images_time_desc'] = 'Enter a number higher than 0 representing the number of miliseconds [ms] after which the group image is changed (considering there are at least 2).';
+$l['animated_additional_images_pause'] = 'Pause On Hover';
+$l['animated_additional_images_pause_desc'] = 'Do you want to temporarily stop the rotation when the current image is hovered?';
