@@ -3,11 +3,11 @@
 /*
 Nazwa: Animowane dodatkowe grupy
 Autor: Destroy666
-Wersja: 1.0
+Wersja: 1.3
 Wymagania: Plugin Library
 Informacje: Plugin dla skryptu MyBB, zakodowany dla wersji 1.8.x (może także działać w 1.6.x/1.4.x).
 Wyświetla obrazki dodatkowych grup w formie "karuzeli" JS.
-3 nowe szablony, 5 zmian w szablonach, 7 nowych ustawień
+3 nowe szablony, 5 zmian w szablonach, 8 nowych ustawień
 Licencja: GNU GPL v3, 29 June 2007. Więcej informacji w pliku LICENSE.md.
 Support: officjalne forum MyBB - http://community.mybb.com/mods.php?action=profile&uid=58253 (nie odpowiadam na PM, tylko na posty)
 Zgłaszanie błędów: mój github - https://github.com/Destroy666x

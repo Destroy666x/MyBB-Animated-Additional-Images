@@ -5,14 +5,14 @@
 
 **Name**: Animated Additional Images  
 **Author**: Destroy666  
-**Version**: 1.2  
+**Version**: 1.3  
 
 **Info**:
 ---------
 
-Plugin for MyBB forum software, coded for versions 1.8.x (will probably also work in 1.6.x/1.4.x).  
+Plugin for MyBB forum software, coded for versions 1.8.x (may also work in 1.6.x/1.4.x after some changes).  
 It displays additional group images in postbit/memberlist/profile by using a "carousel" JS.  
-3 new templates, 5 template edits, 7 new settings  
+3 new templates, 5 template edits, 8 new settings  
 Released under GNU GPL v3, 29 June 2007. Read the LICENSE.md file for more information.  
 
 **Support/bug reports**: 
@@ -24,6 +24,7 @@ Released under GNU GPL v3, 29 June 2007. Read the LICENSE.md file for more infor
 **Changelog**:
 --------------
 
+**1.3** - fixed showing group images after quick reply, added a setting for pausing animation on mouse hover
 **1.2** - small corrections  
 **1.1** - fixed a small conflict with MyBB core code that cause quick reply to break (thanks to Ben Conway for report)  
 **1.0** - initial release  

@@ -3,11 +3,11 @@
 /*
 Name: Animated Additional Group Images
 Author: Destroy666
-Version: 1.2
+Version: 1.3
 Requirements: Plugin Library
 Info: Plugin for MyBB forum software, coded for versions 1.8.x (may also work in 1.6.x/1.4.x after some changes).
 It displays additional group images in postbit/memberlist/profile by using a "carousel" JS.
-3 new templates, 5 template edits, 7 new settings
+3 new templates, 5 template edits, 8 new settings
 Released under GNU GPL v3, 29 June 2007. Read the LICENSE.md file for more information.
 Support: official MyBB forum - http://community.mybb.com/mods.php?action=profile&uid=58253 (don't PM me, post on forums)
 Bug reports: my github - https://github.com/Destroy666x
@@ -59,7 +59,7 @@ function animated_additional_images_info()
 		'website'		=> 'https://github.com/Destroy666x',
 		'author'		=> 'Destroy666',
 		'authorsite'	=> 'https://github.com/Destroy666x',
-		'version'		=> 1.2,
+		'version'		=> 1.3,
 		'codename'		=> 'animated_additional_images',
 		'compatibility'	=> '18*'
     );
@@ -279,7 +279,7 @@ function animated_additional_images_global()
 		$yes = false;
 		$action = $mybb->get_input('action');
 		
-		if(THIS_SCRIPT == 'showthread.php' && $mybb->settings['animated_additional_images_posts'])
+		if(THIS_SCRIPT == 'showthread.php' || (THIS_SCRIPT == 'newreply.php' && $mybb->get_input('ajax', MyBB::INPUT_INT)) && $mybb->settings['animated_additional_images_posts'])
 		{
 			$plugins->add_hook('postbit', 'animated_additional_images_postbit1');
 			$yes = true;
