@@ -316,8 +316,7 @@ function animated_additional_images_global()
 										? ',animatedadditionalimages_js,animatedadditionalimages_all,animatedadditionalimages_image'
 										: 'animatedadditionalimages_js,animatedadditionalimages_all,animatedadditionalimages_image';
 			
-			if($mybb->settings['animated_additional_images_pause'])
-				$pause = 'if(current.is(":hover")) return;';
+			$pause = $mybb->settings['animated_additional_images_pause'] ? 'if(current.is(":hover")) return;' ? '';
 			
 			eval('$additional_images_js = "'.$GLOBALS['templates']->get('animatedadditionalimages_js').'";');
 		}
