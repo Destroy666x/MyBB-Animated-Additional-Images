@@ -327,7 +327,7 @@ function animated_additional_images_global_temp()
 	global $mybb;
 	
 	$switchtime = (int)$mybb->settings['animated_additional_images_time'];
-	$pause = $mybb->settings['animated_additional_images_pause'] ? 'if(current.is(":hover")) return;' : '';
+	$pause = $mybb->settings['animated_additional_images_pause'] ? 'if(current.is(".additional_img_active:hover")) return;' : '';
 	eval('$GLOBALS["additional_images_js"] = "'.$GLOBALS['templates']->get('animatedadditionalimages_js').'";');
 }
 
